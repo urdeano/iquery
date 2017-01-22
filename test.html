@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="first">1</div>
+    <div>2</div>
+    
+    <div>3</div>
+    <p>ppp</p>
+    <div>4</div>
+    <p>ppp</p>
+    <div>5</div>
+</body>
+<script src='iquery.core.js'></script>
+<script src='iquery.ctor.js'></script>
+<script src='iquery.dom.js'></script>
+<script>
+
+
+    I("div").each(function () {
+        this.style.border = "1px solid red";
+    })
+
+    // I("<div>test</div><div>test1</div><div>test2</div>").prependTo(document.body);
+
+    // I("<p>ppp</p>").insertBefore("div").each(function(){
+    //     this.style.border = "3px solid blue";
+    // }).end().each(function(){
+    //     this.style.background="green";
+    // });
+
+    // I("div").before("<p>ccc</p>").each(function(){
+    //     this.style.border = "3px solid yellow";
+    // }).each(function(){
+    //     this.style.background="green";
+    // });
+    console.log(I("p").prevAll());
+    // I("<p>test1</p><p>test2</p><p>test3</p>").insertBefore(document.body);
+    // I("<p>test1</p><p>test2</p><p>test3</p>").appendTo("div,p");
+</script>
+
+</html>
